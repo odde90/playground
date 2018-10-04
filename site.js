@@ -28,15 +28,52 @@ function myLigma() {
         document.body.style.backgroundColor = "pink";
     }
     }
-    /*     var style = document.body.style;
 
-    function randomizeBackground() {
-        var randomValue = math.random();
-        console.log(randomValue); */
+    function randomizeBackgroundPro() {
+        var red = Math.round(Math.random() * 255);
+        var green = Math.round(Math.random() * 255);
+        var blue = Math.round(Math.random() * 255);
 
-/*  function myButton(){
-        var x = math.floor((math.random() * 10) + 1 );
-        document.getElementById("demo").innerHTML = x; */
+        var rgbValue = "rgb(" + red +"," + green + "," + blue + ")";
+        document.body.style.backgroundColor = rgbValue;
+
+        console.log(red);
+        setInterval (randomizeBackgroundPro, 1500);
+    }
+
+
+
+    function hexColorBoi(){
+        var red1 = converToHex(Math.round(Math.random() * 15));
+        var red2 = converToHex(Math.round(Math.random() * 15));
+        var green1 = converToHex(Math.round(Math.random() * 15));
+        var green2 = converToHex(Math.round(Math.random() * 15));
+        var blue1 = converToHex(Math.round(Math.random() * 15));
+        var blue2 = converToHex(Math.round(Math.random() * 15));
+
+        var rgbValue = "#"+red1+red2+green1+green2+blue1+blue2;
+        document.body.style.backgroundColor = rgbValue;
+        console.log(rgbValue);
+    }
+
+    function converToHex (value) {
+        if (value == 10) {
+            return "A";
+        } if (value == 11) {
+            return "B";
+        } if (value == 12) {
+            return "C";
+        } if (value == 13) {
+            return "D";
+        } if (value == 14){
+            return "E";
+        } if (value == 15) {
+            return "F";
+        }
+        else {
+            return value;
+        }
+    }
 
 //pass by value
 //string, number, boolean
