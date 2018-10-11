@@ -75,6 +75,7 @@ function myLigma() {
         }
     }
 
+    myLibary
 //pass by value
 //string, number, boolean
 

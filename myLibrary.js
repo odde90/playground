@@ -20,9 +20,16 @@ function calculateTriangelArea (base, height){
 }
 
 function calculateCircleArea (diameter, radie){
-    return Math * radius * radius;
+    return Math.PI * radius * radius;
 }
 
- console.log(calculateRictangleArea (5.5, 3,3));
+/*  console.log(calculateRictangleArea (5.5, 3,3));
  console.log(calculateTriangelArea(5.5, 3,3));
  console.log(calculateCircleArea(2));
+ */
+
+return {
+    calculateRictangleArea: calculateRictangleArea,
+    calculateTriangelArea: calculateTriangelArea,
+    calculateCircleArea: calculateCircleArea
+}
